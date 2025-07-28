@@ -62,4 +62,21 @@ public class SistemaCitas {
             .filter(p -> p.getCedula().equals(cedula))
             .findFirst().orElse(null);
     }
+
+    public List<Paciente> getPacientes() {
+        return pacientes;
+    }
+
+    public List<Medico> getMedicos() {
+        return medicos;
+    }
+
+    public List<CitaMedica> getCitas() {
+        return citas;
+    }
+
+    public List<ExamenLaboratorio> getExamenes() {
+        return examenes;
+    }
+    
 }
