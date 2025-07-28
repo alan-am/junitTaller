@@ -38,13 +38,20 @@ public class SistemaCitas {
         }
     }
 
-    public void registrarResultado(String cedulaPaciente, String tipoExamen, String resultado) {
-        for (ExamenLaboratorio e : examenes) {
-            if (e.toString().contains(cedulaPaciente) && e.toString().contains(tipoExamen)) {
-                e.registrarResultado(resultado);
-                break;
+    public String registrarResultado(String cedulaPaciente, String tipoExamen, String resultado) {
+        String msj = "No se añade examen";
+        for (Paciente p : pacientes) {
+            if (p.getCedula().equals(cedulaPaciente)) {
+                for (ExamenLaboratorio e : examenes) {
+                    if (e.toString().contains(cedulaPaciente) && e.toString().contains(tipoExamen)) {
+                        e.registrarResultado(resultado);
+                        break;
+                    }
+                }
             }
+            return "";
         }
+        return msj;
     }
 
     public void verHistorial(String cedulaPaciente) {
