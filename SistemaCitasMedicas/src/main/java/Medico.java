@@ -3,6 +3,9 @@ public class Medico {
     private String especialidad;
 
     public Medico(String nombre, String especialidad) {
+        if (nombre.equals("") || nombre==null) {
+            throw new IllegalArgumentException("No se permite nombres vacíos");
+        }
         this.nombre = nombre;
         this.especialidad = especialidad;
     }
