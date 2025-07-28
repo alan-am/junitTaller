@@ -4,6 +4,9 @@ public class Paciente {
     private String correo;
 
     public Paciente(String cedula, String nombre, String correo) {
+        if (cedula == null || cedula.trim().isEmpty()) {
+            throw new IllegalArgumentException("La cédula no puede estar vacía");
+        }
         this.cedula = cedula;
         this.nombre = nombre;
         this.correo = correo;
