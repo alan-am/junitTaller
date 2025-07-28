@@ -7,7 +7,7 @@ import java.time.LocalDateTime;
 public class CitaMedicaTest {
     @Test
     void testToString() {
-        Paciente paciente = new Paciente("09571834","Juan Perez","vitipro@gmail.com");
+        Paciente paciente = new Paciente("09334258172","Juan Perez","vitipro@gmail.com");
         Medico medico = new Medico("Angela Lopez", "Cardiología");
         LocalDateTime fechaHora = LocalDateTime.of(2024, 6, 10, 15, 30);
         CitaMedica cita = new CitaMedica(paciente, medico, fechaHora);
@@ -19,7 +19,7 @@ public class CitaMedicaTest {
 
     @Test
     void testSetEstadoNull() {
-        Paciente paciente = new Paciente("09571834","Juan Perez","vitipro@gmail.com");
+        Paciente paciente = new Paciente("09334258172","Juan Perez","vitipro@gmail.com");
         Medico medico = new Medico("Angela Lopez", "Cardiología");
         LocalDateTime fechaHora = LocalDateTime.of(2024, 6, 10, 15, 30);
         CitaMedica cita = new CitaMedica(paciente, medico, fechaHora);
