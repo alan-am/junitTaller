@@ -9,4 +9,21 @@ public class SistemasCitasTest {
         
     }
 
+    @Test
+    void testSolicitarExamenValido(){
+        //datos 
+
+    }
+
+    @Test
+    void testRegistrarResultado(){
+        //datos 
+
+    }
+    @Test
+    void testVerHistorial(){
+        //datos 
+
+    }
 }
+
