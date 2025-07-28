@@ -64,9 +64,26 @@ public class SistemaCitas {
             .forEach(System.out::println);
     }
 
-    private Paciente buscarPaciente(String cedula) {
+    public Paciente buscarPaciente(String cedula) {
         return pacientes.stream()
             .filter(p -> p.getCedula().equals(cedula))
             .findFirst().orElse(null);
     }
+
+    public List<Paciente> getPacientes() {
+        return pacientes;
+    }
+
+    public List<Medico> getMedicos() {
+        return medicos;
+    }
+
+    public List<CitaMedica> getCitas() {
+        return citas;
+    }
+
+    public List<ExamenLaboratorio> getExamenes() {
+        return examenes;
+    }
+    
 }
