@@ -11,7 +11,7 @@ public class ExamenLaboratorioTest {
 
         examen.registrarResultado("Positivo");
 
-        String esperado = "Examen: Halter de corazon - Paciente: Roberto Bravo ('00000') - Resultado: Positivo";
+        String esperado = "Examen: Halter de corazon - Paciente: Roberto Bravo (0000000000) - Resultado: Positivo";
         assertEquals(esperado, examen.toString());
     }
 
